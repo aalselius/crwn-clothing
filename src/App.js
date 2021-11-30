@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
 
 const HatsPage = () => (
   <div>
@@ -21,8 +22,7 @@ function App() {
     <div>
       <Routes>
       <Route exact path='/' element={<HomePage/>} />
-      <Route path='/hats' element={<HatsPage/>} />
-      <Route path='/topic/:topicId' element={<TopicDetail/>} />
+      <Route path='/shop' element={<ShopPage/>} />
       </Routes>
     </div>
   );
